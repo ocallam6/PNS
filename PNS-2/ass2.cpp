@@ -83,7 +83,7 @@ double b(double c)
 		{
 			x=runge(step,x,step_size,t_0);
 		
-			myfile<<t_0+step*step_size<<","<<x[0]<<","<<x[1]<<","<<x[0]<<",\n";
+			myfile<<t_0+step*step_size<<","<<x[0]<<","<<x[1]<<",\n";
 		}
 		myfile.close();
 		
@@ -94,7 +94,7 @@ double b(double c)
 		std::cout<<"^------n="<<step_numbers<<"-------^ \n";
 		step_numbers=step_numbers*2;
 	}
-	return x[0]-c;
+	return x[0]-1;
 }
 
 
